@@ -12,5 +12,5 @@ http.createServer(function(req,res){//funcion callback
       res.writeHead(200,{'Content-type':'text/html'});
       res.write('<h1>Hola Zag servidor arriba sin rutas</h1>');
       res.end();
-}).listen(10001);
+}).listen(10001);//listen tienes otros parametros luego veremos
 console.log("Servidor corriendo y simple")
