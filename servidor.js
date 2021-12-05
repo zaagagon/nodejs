@@ -7,8 +7,8 @@ http.createServer (function(req,res){
 
    res.writeHead(200,{'Content-type':'text/html'});
    res.write('<h1>Hola Zag servidor corriendo con Nodemon</h1>');
-    res.end("final de la prueba");
-    url=urls.parse(req.url);
+    res.end("Final de la prueba");
+    url=urls.parse(req.url).pathname;
     console.log(url);
     
 }).listen(port,'localhost',function(){
@@ -22,3 +22,15 @@ $ lsof -i tcp:3000
 $ kill -9 PID */
 //console.log("Servidor corriendo en el puerto"+port);
 //console.log("hola de nuevo");
+
+//Creacion de rutas
+
+var rutas= {}; //rutas
+rutas['/']=root; //es necesario crear la funcion root
+
+function root(res){
+    res.writeHead(200,{'Content-type':'text/html'});
+    res.write('<h1>Pagina principal ADMIN</h1>');
+    res.end("Pagina cargada");
+
+}
