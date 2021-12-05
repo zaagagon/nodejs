@@ -1,3 +1,5 @@
+//revisar sintaxis y logica
+
 const http = require('http');
 
 http.createServer((request, response) => {
@@ -16,3 +18,4 @@ http.createServer((request, response) => {
     response.end();
   }
 }).listen(9001);
+console.log("corriendo y vivito");
