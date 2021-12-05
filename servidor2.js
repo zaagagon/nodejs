@@ -1,9 +1,12 @@
+//servidor http con request y response
+//usamos el modulo createServer
+
 //prueba de rutas con node js
 var http = require('http');
 var port = 9000;
 var urls = require('url');
 
-http.createServer (function(req,res){
+http.createServer (function(req,res){//funcion callback que recibe peticion y respuesta
 
   /* res.writeHead(200,{'Content-type':'text/html'});
    res.write('<h1>Hola Zag servidor arriba </h1>');
