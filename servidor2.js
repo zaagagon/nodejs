@@ -8,7 +8,7 @@ http.createServer (function(req,res){
   /* res.writeHead(200,{'Content-type':'text/html'});
    res.write('<h1>Hola Zag servidor arriba </h1>');
     res.end();*/
-    url=urls.parse(req.url).pathname;
+    url=urls.parse(req.url).pathname;//pathname contiene lo ingresado por el usuario
    router(rutas,url, res);//le pasamos 3 objetos
   
    console.log(url);
