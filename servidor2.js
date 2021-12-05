@@ -61,17 +61,16 @@ function certificaciones(res) {
 }
 
 function google(res) {
-    //window.open('http://www.ejemplo.com.ar/');
-    //window.location.href = "https://professor-falken.com";
+    //window.open('http://www.google.com/');
+    //window.location.href = "https://www.google.com";
     res.writeHead(200,{'Content-type':'text/html'});
     res.write('<a href="https://www.google.com" target="_blank" > <h1>Pagina abierta con rutas </h1></a>');
     res.end();
  
 }
-
+//otro ejemplo
 function pagina(res) {
-    //window.open('http://www.ejemplo.com.ar/');
-    //window.location.href = "https://professor-falken.com";
+
     res.writeHead(200,{'Content-type':'text/html'});
     res.write('<a href="pagina.html">Inicio <strong>Inicio HTML 5</strong></a>');
     res.end();
