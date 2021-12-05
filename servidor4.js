@@ -1,6 +1,7 @@
 //revisar sintaxis y logica
 
 const http = require('http');
+var port=9001; //creamos variable puerto
 
 http.createServer((request, response) => {
   request.on('error', (err) => {
@@ -15,7 +16,11 @@ http.createServer((request, response) => {
     request.pipe(response);
   } else {
     response.statusCode = 404;
-    response.end();
+    //podemos usar writeHead
+     response.writeHead(200,{'Content-type':'text/html'});
+      response.write('<h1>Error al cargar la pagina</h1>');
+      response.end();
+   // response.end();
   }
-}).listen(9001);
+}).listen(port);
 console.log("corriendo y vivito");
