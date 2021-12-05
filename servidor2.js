@@ -9,7 +9,7 @@ http.createServer (function(req,res){
    res.write('<h1>Hola Zag servidor arriba </h1>');
     res.end();*/
     url=urls.parse(req.url).pathname;//pathname contiene lo ingresado por el usuario
-   router(rutas,url, res);//le pasamos 3 objetos
+    router(rutas,url, res);//le pasamos 3 objetos
   
    console.log(url);
     
@@ -23,9 +23,10 @@ function router(rutas,url,res){ //le vamos a pasar el objeto rutas
         return rutas[url](res);
     }
     else{
+        //Validación en caso de error de pagina
         res.writeHead(200,{'Content-type':'text/html'});
-    res.write('<h1>Pagina no encontrada revisar...</h1>');
-    res.end();
+        res.write('<h1>Pagina no encontrada revisar...</h1>');
+        res.end();
     }
 }
 
