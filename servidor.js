@@ -1,6 +1,6 @@
 //prueba de rutas con node js
 var http = require('http');
-var port = 7000;
+var port = 1000;
 var urls = require('url');
 
 http.createServer (function(req,res){

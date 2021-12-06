@@ -4,16 +4,18 @@
 //usamos la funcion que recibe solicitudes y respuestas
 //una vez creado el servidor se ejecuta
 
-const { listenerCount } = require('events');
+
 var http = require('http');
+
 http.createServer(function(req,res){
     //si deseamos mostrar algo en el navegador podemos usar
     //un mensaje
     res.writeHead(200,{'Content-type':'text/hmtl'});
-    res.write('<h1>hola servidor 5</h1>');
+    res.write('<h1>Hola Zag servidor corriendo con Nodemon</h1>');
+    res.write('<h1>hola</h1>');
     res.end();
 
-}).listen(10002);;
+}).listen(10006);;
 
 console.log("servidor corriendo");
 
