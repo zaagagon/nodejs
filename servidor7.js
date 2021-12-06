@@ -18,3 +18,5 @@ http.createServer(function(req,res){
     res.end();
 }).listen(1100);
 console.log("Exito total");
+
+//servidor http ok 
