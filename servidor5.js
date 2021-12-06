@@ -1,8 +1,21 @@
 //elementos del servidor
 //puerto objeto http
+//se crea el servidor con el modulo createServer
+//usamos la funcion que recibe solicitudes y respuestas
+//una vez creado el servidor se ejecuta
 
+const { listenerCount } = require('events');
 var http = require('http');
-const { createServer } = require('https');
+http.createServer(function(req,res){
+    //si deseamos mostrar algo en el navegador podemos usar
+    //un mensaje
+    res.writeHead(200,{'Content-type':'text/hmtl'});
+    res.write('<h1>hola servidor 5</h1>');
+    res.end();
+
+}).listen(10002);;
+
+console.log("servidor corriendo");
 
 //objeto http para llamar el modulo createServer
 
