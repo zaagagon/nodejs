@@ -10,3 +10,5 @@ setTimeout(()=>{
 },4000);//4 segundos
 //repasar otras funciones
 document.writeln("script ok");//escribimos directamente en el html
+//vamos a crear una etiqueta h1 con createelement
+document.createElement('<h1>etiqueta probada</h1>');
