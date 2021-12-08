@@ -5,7 +5,8 @@ const puerto = 4000; //podemos crear una variable para el puerto
 //creamos el servidor 
 
 app.listen(puerto,()=>{
-   console.log('hola servidor en puerto 3000')});//probemos el servidor
+  //ahora concatenemos la variable puerto a nuestro consolelog
+   console.log('hola servidor express en puerto'+puerto)});//probemos el servidor
 //console.log("servidor express ok");
 
 
