@@ -1,9 +1,10 @@
 
 const express = require('express');
 const app = express();
+const puerto = 4000; //podemos crear una variable para el puerto
 //creamos el servidor 
 
-app.listen(3000,()=>{
+app.listen(puerto,()=>{
    console.log('hola servidor en puerto 3000')});//probemos el servidor
 //console.log("servidor express ok");
 
