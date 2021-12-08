@@ -12,3 +12,4 @@ setTimeout(()=>{
 document.writeln("script ok");//escribimos directamente en el html
 //vamos a crear una etiqueta h1 con createelement
 document.createElement('<h1>etiqueta probada</h1>');
+document.body('<p> probando parrafo en el body</p>')
