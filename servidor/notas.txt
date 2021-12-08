@@ -3,9 +3,10 @@ Siempre el json nos permite ver las dependencias
 No posible crear el servidor express sin instalar el modulo en nuestra carpeta
 
 Estructura de carpetas para el servidor
-routes
-
-
+routes - rutas --url del se
+views --ejs
+public - carpeta para archivos estaticos
+controller -- middleware?
 
 Dependencias y modulos
 
