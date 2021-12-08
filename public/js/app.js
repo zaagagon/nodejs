@@ -15,3 +15,5 @@ document.createElement('<h1>etiqueta probada</h1>');
 
 //revisar este ejemplo
 document.body('<p> probando parrafo en el body</p>')
+
+document.createComment('comentarios para mi');
