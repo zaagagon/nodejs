@@ -1,0 +1,3 @@
+Revisar el documento json para mirar si tenemos instalado express
+Siempre el json nos permite ver las dependencias
+No posible crear el servidor express sin instalar el modulo en nuestra carpeta
