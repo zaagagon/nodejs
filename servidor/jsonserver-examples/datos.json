@@ -1,6 +1,13 @@
-"vengadores" : { 
+{"vengadores" : [
+    {
+        "id":"1", 
     "nombre": "hombre araña",
     "nick":"peter parker"
 
 
-} 
+} ,
+{
+    "id":"2",
+    "nombre":"stark",
+    "nick":"tony stark"
+}]}
