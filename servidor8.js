@@ -10,6 +10,7 @@ http.createServer (function(req,res){
     res.end("Final de la prueba");
     url=urls.parse(req.url).pathname;
     router(rutas,url, res);//le pasamos 3 objetos
+    //javascriptp console.log
 
    // console.log(url);
     
