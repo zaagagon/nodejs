@@ -3,6 +3,7 @@
 var http = require('http');
 var port = 1000;
 var urls = require('url');
+//peticiones http resque response
 
 http.createServer (function(req,res){
 
