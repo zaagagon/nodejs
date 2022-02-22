@@ -42,8 +42,8 @@ function router(rutas,url,res){ //le vamos a pasar el objeto rutas
     res.end();
     }
 }
-
-var rutas= {}; //rutas
+//rutas en node js
+var rutas= {}; 
 //Primera ruta creada
 rutas['/admin']=admin; //es necesario crear la funcion admin
 
