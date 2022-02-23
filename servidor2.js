@@ -79,4 +79,4 @@ function pagina(res) {
     res.write('<a href="pagina.html">Inicio <strong>Inicio HTML 5</strong></a>');
     res.end();
  
-}
+}//
