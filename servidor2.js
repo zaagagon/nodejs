@@ -17,7 +17,7 @@ http.createServer (function(req,res){//funcion callback que recibe peticion y re
    console.log(url);
     
 }).listen(port,'localhost',function(){
-    console.log("servidor corriendo en el puerto : "+ port);
+    console.log("Servidor corriendo en el puerto : "+ port);
 });
 
 function router(rutas,url,res){ //le vamos a pasar el objeto rutas
@@ -43,7 +43,7 @@ rutas['/pagina']=pagina;
 
 function root(res){
     res.writeHead(200,{'Content-type':'text/html'});
-    res.write('<h1>Pagina principal Welcome</h1>');
+    res.write('<h1>Pagina Principal Welcome ZAG</h1>');
     res.end();
 
 }
