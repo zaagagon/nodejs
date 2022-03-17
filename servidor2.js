@@ -1,3 +1,6 @@
+//ejecución del programa
+//nodemon servidor2.js
+
 //servidor http con request y response
 //usamos el modulo createServer
 
