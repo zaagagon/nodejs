@@ -47,6 +47,7 @@ rutas['/pagina']=pagina;
 function root(res){
     res.writeHead(200,{'Content-type':'text/html'});
     res.write('<h1>Pagina Principal Welcome ZAG</h1>');
+    res.write('<h2>Rutas :</h2> ');
     res.end();
 
 }
