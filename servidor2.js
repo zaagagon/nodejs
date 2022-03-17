@@ -67,6 +67,7 @@ function certificaciones(res) {
     res.end();
  
 }
+//
 
 function google(res) {
     //window.open('http://www.google.com/');
