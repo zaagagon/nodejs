@@ -1,6 +1,6 @@
 //prueba de rutas con node js
 var http = require('http');
-var port = 1000;
+//var port = 1000;
 var urls = require('url');
 
 http.createServer (function(req,res){
@@ -13,6 +13,6 @@ http.createServer (function(req,res){
 
    // console.log(url);
     
-}).listen(port,'localhost',function(){
+}).listen(1000,'localhost',function(){
     console.log("servidor corriendo en el puerto : "+ port);
 });
