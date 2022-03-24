@@ -7,4 +7,4 @@ const servidor = http.createServer(function(req,res){
     res.writeHead(200,{'content-type':'text/plain'});
     res.end("Hola zag servidor ok");
 
-});servidor()
+});servidor.listen(9000);
