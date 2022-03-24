@@ -4,6 +4,7 @@
 const http = require('http');
 
 const servidor = http.createServer(function(req,res){
-    res.writeHead(200,{'content-type':'text/plain'})
+    res.writeHead(200,{'content-type':'text/plain'});
+    res.end("Hola zag servidor ok");
 
-});
+});servidor()
