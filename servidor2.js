@@ -6,7 +6,7 @@
 
 //prueba de rutas con node js
 var http = require('http');
-var port = 9000;
+var port = 8000;
 var urls = require('url');
 
 http.createServer (function(req,res){//funcion callback que recibe peticion y respuesta
@@ -48,7 +48,7 @@ function root(res){
     res.writeHead(200,{'Content-type':'text/html'});
     res.write('<h1>Pagina Principal Welcome ZAG</h1>');
     res.write('<h2>Rutas :</h2> ');
-    res.write('<h2><ul><li>/admin</li><li>/certificaciones</li></ul>');//etiquetas sin cerrar
+    res.write('<h2><ul><li>/admin</li><li>/certificaciones</li><li>/google</li></ul>');//etiquetas sin cerrar
     res.end();
 
 }
