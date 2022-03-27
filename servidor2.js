@@ -6,7 +6,7 @@
 
 //prueba de rutas con node js
 var http = require('http');
-var port = 8000;
+var port = 9000;
 var urls = require('url');
 
 http.createServer (function(req,res){//funcion callback que recibe peticion y respuesta
@@ -83,7 +83,7 @@ function pagina(res) {
 
     res.writeHead(200,{'Content-type':'text/html'});
     res.write('<a href="pagina.html">Inicio <strong>Inicio HTML 5</strong></a>');
-    res.write('<h1></h1>')
-    res.end();
+    //res.write('<h1 style=color:blue>Rutas con Express</h1>');
+    res.end();//
  
 }//
