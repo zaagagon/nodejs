@@ -86,4 +86,4 @@ function pagina(res) {
     //res.write('<h1 style=color:blue>Rutas con Express</h1>');
     res.end();//
  
-}//
+}//revisar
