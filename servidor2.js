@@ -83,6 +83,7 @@ function pagina(res) {
 
     res.writeHead(200,{'Content-type':'text/html'});
     res.write('<a href="pagina.html">Inicio <strong>Inicio HTML 5</strong></a>');
+    res.write('<h1></h1>')
     res.end();
  
 }//
