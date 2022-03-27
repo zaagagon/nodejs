@@ -6,7 +6,7 @@
 
 //prueba de rutas con node js
 var http = require('http');
-var port = 9000;
+var port = 10002;
 var urls = require('url');
 
 http.createServer (function(req,res){//funcion callback que recibe peticion y respuesta
@@ -48,7 +48,7 @@ function root(res){
     res.writeHead(200,{'Content-type':'text/html'});
     res.write('<h1>Pagina Principal Welcome ZAG</h1>');
     res.write('<h2>Rutas :</h2> ');
-   // res.write('<h2><ul><li>/admin</li><li>/certificaciones</li><li>/google</li></ul>');//etiquetas sin cerrar
+    res.write('<h2><ul><li>/admin</li><li>/certificaciones</li><li>/google</li></ul>');//etiquetas sin cerrar
     res.end();
 
 }
@@ -82,8 +82,8 @@ function google(res) {
 function pagina(res) {
 
     res.writeHead(200,{'Content-type':'text/html'});
-    res.write('<a href="pagina.html">Inicio <strong>Inicio HTML 5</strong></a>');
-    //res.write('<h1 style=color:blue>Rutas con Express</h1>');
+    res.write('<a href="pagina.html">Pagina <strong>Inicio HTML 5</strong></a>');
+    res.write('<h1 style=color:blue>Rutas con Express</h1>');
     res.end();//
  
 }//revisar
