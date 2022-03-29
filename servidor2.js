@@ -46,7 +46,7 @@ rutas['/pagina']=pagina;
 
 function root(res){
     res.writeHead(200,{'Content-type':'text/html'});
-    res.write('<h1>Pagina Principal Welcome</h1>');
+    res.write('<h1>Pagina Principal Welcome usuario</h1>');
     res.write('<h2>Rutas :</h2> ');
     res.write('<h2><ul><li>/admin</li><li>/certificaciones</li><li>/google</li></ul>');//etiquetas sin cerrar
     res.end();
