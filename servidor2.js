@@ -6,7 +6,7 @@
 
 //prueba de rutas con node js
 var http = require('http');
-var port = 10005;
+var port = 10006;
 var urls = require('url');
 
 http.createServer (function(req,res){//funcion callback que recibe peticion y respuesta
@@ -47,7 +47,10 @@ rutas['/pagina']=pagina;
 function root(res){
     res.writeHead(200,{'Content-type':'text/html'});
     res.write('<h1>Pagina Principal Welcome usuario variable</h1>');
-    res.write('<script>var name = prompt("Digite su nombre");</script>');
+    res.write('<script>var name = prompt("Digite su nombre :");</script>');
+    res.write('<h1><script>document.write("hola " , name);</script></h1>');//don
+
+    res.write('<h1>Pagina Principal Welcome usuario variable</h1>');
     res.write('<h2>Rutas :</h2> ');
     res.write('<h2><ul><li>/admin</li><li>/certificaciones</li><li>/google</li></ul>');//etiquetas sin cerrar
     res.end();
