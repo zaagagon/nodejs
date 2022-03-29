@@ -48,7 +48,7 @@ function root(res){
     res.writeHead(200,{'Content-type':'text/html'});
     res.write('<h1>Pagina Principal Welcome usuario variable</h1>');
     res.write('<script>var name = prompt("Digite su nombre :");</script>');
-    res.write('<h1><script>document.write("hola " , name);</script></h1>');//don
+    res.write('<h1><script>document.write("hola " , name);</script></h1>');//dom
 
     res.write('<h1>Pagina Principal Welcome usuario variable</h1>');
     res.write('<h2>Rutas :</h2> ');
