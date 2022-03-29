@@ -11,7 +11,7 @@ const servidor = http.createServer(function(req,res){
     res.write('<h2 style= color:red>**Servidor Olimpo **</h2>');//color atributo
     res.write('<p>Servidor creado en express con node js</p>');
     res.write('<h3><n3/>');
-    res.end("Hola zag servidor ok");//solo se puede llamar una vez
+    res.end("Hola ADSI servidor ok");//solo se puede llamar una vez
 
 });servidor.listen(9000);//puerto 9000
 
