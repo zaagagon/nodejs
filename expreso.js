@@ -16,6 +16,13 @@ app.get('/nosotros', (req, res) => {
  res.send('<h1 style= "color: blue">Hello zag!</h1>')//color tag //
 })
 
+app.get('/principal', (req, res) => {
+  // res.write('<h1>Express funcionando</h1>');
+  res.writeHead(200,{'Content-type':'text/html'});//para que funcione necesita
+   res.write('<h1>Pagina principal index html</h1>');
+ res.send('<h1 style= "color: blue">Hello zag!</h1>')//color tag //
+})
+
 app.listen(port, () => {
   console.log(`Servidor escuchando en el puerto ${port}`)
 })
