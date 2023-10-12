@@ -1,4 +1,4 @@
 //bot que saluda
-console.log("cual es tu nombre");
-var entrada = readline();
-console.log(entrada);
+//variable creada e inicializada
+let nombre ="kevin"
+alert("hola " + nombre)
