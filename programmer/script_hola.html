@@ -1,0 +1,36 @@
+<script>
+
+    alert("Bienvenido al script")
+    var num1=prompt("digite numero ")
+    alert("el numero digitado es .. : " + num1)
+
+    alert(" ***sumemos dos numeros **")
+    var num2=prompt("digite numero")
+    var num3=prompt("digite numero")
+    result=num3+num2
+    alert("El resultado de la suma es : "+ result)
+result2=parseInt(num2)+parseInt(num3)
+alert("disculpa en realidad la suma es .." + result2)
+
+alert("hasta una proxima ...")
+
+window.setInterval (BlinkIt, 500);
+var color = "red";
+function BlinkIt () {
+var blink = document.getElementById ("blink");
+color = (color == "#ffffff")? "red" : "#ffffff";
+blink.style.color = color;
+blink.style.fontSize='36px';}
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="blink">Ha sido un placer!</div>
+<div id="blink" onclick="parent.location='http://norfipc.com'">
+</body>
+</html>
