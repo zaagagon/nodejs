@@ -7,6 +7,7 @@ console.log(size);
 console.log(datos[3]);
 
 function hola(){
-  console.log("hola desde la funcion")
+    // console.log(process.argv);
+  console.log("hola desde la funcion : " + process.argv[2])
 }
 hola()
